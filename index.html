@@ -32,20 +32,20 @@ body {
      Sections are transparent — this gradient is all you see. */
   background: linear-gradient(
     to bottom,
-    #1a1108  0%,
-    #1a1108  8%,
-    #3d2510  18%,
-    #c4956a  30%,
-    #f0e6d8  40%,
-    #e8dcc8  52%,
-    #d4c4a8  60%,
-    #5a3418  68%,
-    #1a1108  76%,
-    #1a1108  82%,
-    #7a5030  88%,
-    #f0e6d8  94%,
-    #e8dcc8  97%,
-    #1a1108  100%
+    #2e1e10  0%,
+    #2e1e10  8%,
+    #5a3820  18%,
+    #d4a878  30%,
+    #f5ede0  40%,
+    #ede4d0  52%,
+    #ddd0b8  60%,
+    #b08858  68%,
+    #6a4828  76%,
+    #6a4828  82%,
+    #b08858  88%,
+    #f5ede0  94%,
+    #ede4d0  97%,
+    #2e1e10  100%
   );
   background-size: 100% 100%;
 }
@@ -66,7 +66,7 @@ body {
 
 /* Force light text colors on dark gradient zones */
 #s0 #s0-sub        { color: var(--terra); }
-#s-intro .intro-hook-body { color: rgba(201,183,163,0.82); }
+#s-intro .intro-hook-body { font-size: 18px; font-weight: 300; line-height: 1.9; color: #ffffff; max-width: none; margin: 0; }
 
 /* paper grain overlay */
 body::before {
@@ -96,7 +96,7 @@ section {
 
 /* ── TYPOGRAPHY ── */
 .eyebrow {
-  display: block; font-size: 10px; font-weight: 700;
+  display: block; font-size: 12px; font-weight: 700;
   color: var(--terra); letter-spacing: 4px; text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -106,7 +106,7 @@ h2.serif {
   font-weight: 400; line-height: 1.15; margin-bottom: 18px;
 }
 .body {
-  font-size: 15px; font-weight: 300;
+  font-size: 18px; font-weight: 300;
   line-height: 1.9; color: var(--ink-soft);
 }
 
@@ -184,13 +184,13 @@ h2.serif {
 .intro-rule {
   width: 0; height: 1px;
   background: linear-gradient(90deg, transparent, var(--terra), transparent);
-  margin: 40px auto;
+  margin: 40px 0;
   transition: width 1.2s cubic-bezier(0.16,1,0.3,1) 0.8s;
 }
 .intro-rule.in { width: 240px; }
 
 .intro-hook {
-  max-width: 640px;
+  max-width: 900px;
   opacity: 0; transform: translateY(24px);
   transition: opacity 0.9s ease 1s, transform 0.9s ease 1s;
 }
@@ -222,7 +222,7 @@ h2.serif {
 ═══════════════════════════════════ */
 #s0 {
   flex-direction: column; text-align: center;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 200px;
   gap: 0;
 }
@@ -251,7 +251,7 @@ h2.serif {
 ─────────────────────────────────────────────────────  */
 
 /* S0 + S-INTRO: dark zone at top of page */
-#s0 #s0-title              { color: #ede0c8; }
+#s0 #s0-title              { color: #3a2005; }
 #s0 #s0-sub                { color: #a67c52; }
 #s0 .scroll-cue            { color: #a67c52; }
 #s0 .scroll-cue-line       { background: linear-gradient(to bottom, #a67c52, transparent); }
@@ -260,8 +260,8 @@ h2.serif {
 #s-intro .intro-site-title    { color: #7a6050; }
 #s-intro .intro-film-title    { color: #ede0c8; }
 #s-intro .intro-film-korean   { color: #a67c52; }
-#s-intro .intro-hook-question { color: #c9b7a3; }
-#s-intro .intro-hook-body     { color: #8a7060; }
+#s-intro .intro-hook-question { color: #e8d5be; }
+#s-intro .intro-hook-body     { color: #ffffff; }
 #s-intro .intro-rule          { background: linear-gradient(90deg,transparent,#a67c52,transparent); }
 
 /* S1: cream zone — dark text */
@@ -285,16 +285,16 @@ h2.serif {
 /* S4: dark zone */
 #s4 .eyebrow        { color: #a67c52; }
 #s4 h2.serif        { color: #ddc9aa; }
-#s4 .body           { color: #b09878; }
-#s4 .s4-badge       { color: #a67c52; border-color: #8b5e3c; }
+#s4 .body           { color: #ffffff; }
+#s4 .s4-badge       { color: #c9b7a3; border-color: #c9b7a3; font-size: 15px; }
 #s4 .portrait-name  { color: #c9b7a3; }
 #s4 .portrait-hanja { color: #a67c52; }
 
 /* S5: cream zone — dark text */
 #s5 .q-open         { color: #c9b7a3; }
-#s5 .q-context      { color: #a67c52; }
+#s5 .q-context      { color: #6b3c18; }
 #s5 .q-context-note { color: #4a3328; }
-#s5 .q-hanja        { color: #8b5e3c; }
+#s5 .q-hanja        { color: #2f1602; }
 #s5 blockquote      { color: #2b1f1a; }
 #s5 .q-attr         { color: #a67c52; }
 
@@ -306,9 +306,9 @@ h2.serif {
 #s6 .card-body  { color: #4a3328; }
 
 /* S7: dark zone */
-#s7 .finale-title  { color: #ede0c8; }
+#s7 .finale-title  { color: #3b1e06; }
 #s7 .finale-dates  { color: #a67c52; }
-#s7 .finale-coda   { color: #b09878; }
+#s7 .finale-coda   { color: #3c2404; }
 #s7 .finale-stamp  { color: #8b5e3c; }
 
 
@@ -365,7 +365,7 @@ h2.serif {
 .feature-title  { font-family: 'Cormorant Garamond',serif; font-size: clamp(20px,3.5vw,36px); color: var(--cream); letter-spacing: 3px; font-weight: 300; position: relative; z-index: 1; line-height: 1.1; }
 .feature-korean { font-family: 'Cormorant Garamond',serif; font-size: 13px; color: var(--stone); letter-spacing: 2px; margin-top: 4px; position: relative; z-index: 1; }
 .feature-year   { font-size: 10px; color: var(--terra); letter-spacing: 3px; margin-top: 8px; position: relative; z-index: 1; }
-.feature-desc   { font-family: 'Cormorant Garamond',serif; font-size: 13px; font-style: italic; color: var(--stone); line-height: 1.6; max-width: 340px; margin-top: 10px; position: relative; z-index: 1; }
+.feature-desc   { font-family: 'Cormorant Garamond',serif; font-size: 16px; font-style: italic; color: var(--stone); line-height: 1.6; max-width: 340px; margin-top: 10px; position: relative; z-index: 1; }
 
 #s0-title {
   margin-top: 0;
@@ -403,7 +403,7 @@ h2.serif {
 ═══════════════════════════════════ */
 #s1 { flex-direction: column; gap: 56px; text-align: center; }
 
-.iris-stage { position: relative; width: 420px; height: 420px; margin: 0 auto; }
+.iris-stage { position: relative; width: 540px; height: 540px; margin: 0 auto; }
 .iris-outer {
   position: absolute; inset: 0; border-radius: 50%;
   border: 1px solid var(--stone);
@@ -456,7 +456,7 @@ h2.serif {
 .col-left.in { opacity: 1; transform: translateX(0); }
 
 .seal-wrap {
-  width: 210px; height: 260px; margin: 0 auto;
+  width: 290px; height: 360px; margin: 0 auto;
   position: relative; overflow: hidden;
   opacity: 0; transform: translateX(80px);
   transition: opacity 0.8s ease 0.15s, transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.15s;
@@ -513,9 +513,9 @@ h2.serif {
 
 .tl-box-accent { height: 3px; background: linear-gradient(to right, var(--crimson), var(--copper)); }
 .tl-box-content { padding: 18px 22px; position: relative; z-index: 1; }
-.tl-year  { font-family:'Cormorant Garamond',serif; font-size:32px; color:var(--copper); font-weight:400; line-height:1; margin-bottom:10px; }
+.tl-year  { font-family:'Cormorant Garamond',serif; font-size:32px; color:var(--copper); font-weight:400; line-height:1; margin-bottom:22px; }
 .tl-title { font-size:10px; font-weight:700; color:var(--crimson); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px; }
-.tl-body  { font-size:13px; font-weight:300; color:var(--ink-soft); line-height:1.75; }
+.tl-body  { font-size:16px; font-weight:300; color:var(--ink-soft); line-height:1.75; }
 
 .tl-item:nth-child(odd)  .tl-box .curtain { transform-origin:left;  background:#e4d8c8; }
 .tl-item:nth-child(even) .tl-box .curtain { transform-origin:right; background:#e4d8c8; }
@@ -524,12 +524,11 @@ h2.serif {
 /* ═══════════════════════════════════
    S4 · EOMHEUNGDO  (dark)
 ═══════════════════════════════════ */
-#s4 { flex-direction: column; text-align: center; gap: 0; }
+#s4 { flex-direction: column; text-align: left; gap: 0; align-items: center; padding-left: 60px; padding-right: 60px; }
 #s4 h2.serif  { color: var(--stone); }
-#s4 .body     { color: var(--stone); opacity: 0.75; }
 
 .portrait-wrap {
-  width: 280px; height: 360px; margin: 0 auto 52px;
+  width: 340px; height: 440px; margin: 0 auto 52px;
   position: relative; overflow: hidden;
   opacity: 0; transform: translateY(-80px) scale(0.9);
   transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.16,1,0.3,1);
@@ -552,7 +551,7 @@ h2.serif {
   color: var(--terra); letter-spacing: 3px; text-transform: uppercase;
   border: 1px solid var(--copper); padding: 6px 18px; margin-bottom: 22px;
 }
-.s4-text { max-width: 540px; opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease 0.5s, transform 0.9s ease 0.5s; }
+.s4-text { max-width: 900px; width: 100%; opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease 0.5s, transform 0.9s ease 0.5s; text-align: left; }
 .s4-text.in { opacity: 1; transform: translateY(0); }
 
 
@@ -572,9 +571,9 @@ h2.serif {
 .q-open.in { opacity: 1; transform: scale(1); }
 
 .q-context {
-  font-size: 10px; font-weight: 700; color: var(--terra);
+  font-size: 16px; font-weight: 700; color: var(--terra);
   letter-spacing: 3px; text-transform: uppercase;
-  display: block; margin-bottom: 10px;
+  display: block; margin-bottom: 10px; 
   opacity: 0; transform: translateY(12px);
   transition: opacity 0.7s ease 0.15s, transform 0.7s ease 0.15s;
 }
@@ -591,16 +590,16 @@ h2.serif {
 
 .q-hanja {
   font-family: 'Cormorant Garamond',serif;
-  font-size: clamp(24px,4vw,42px); color: var(--copper);
-  letter-spacing: 0.4em; display: block; margin-bottom: 24px;
-  opacity: 0; transform: translateY(20px);
+  font-size: clamp(48px,4vw,42px); color: var(--copper);
+  letter-spacing: 0.4em; display: block; margin-bottom: 48px;
+  opacity: 0; transform: translateY(20px); margin-top: 48px;
   transition: opacity 0.9s ease 0.45s, transform 0.9s ease 0.45s;
 }
 .q-hanja.in { opacity: 1; transform: translateY(0); }
 
 blockquote {
   font-family: 'Cormorant Garamond',serif;
-  font-size: clamp(18px,2.8vw,28px); font-style: italic; font-weight: 300;
+  font-size: clamp(24px,2.8vw,28px); font-style: italic; font-weight: 300;
   color: var(--ink); line-height: 1.75; position: relative; z-index: 1;
   opacity: 0; transform: translateY(32px);
   transition: opacity 1s ease 0.65s, transform 1s ease 0.65s;
@@ -656,7 +655,7 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 .card-inner { padding:26px 24px; position:relative; z-index:2; }
 .card-num  { font-family:'Cormorant Garamond',serif; font-size:52px; color:var(--stone); font-weight:300; line-height:1; margin-bottom:10px; }
 .card-ttl  { font-size:10px; font-weight:700; color:var(--crimson); letter-spacing:2px; text-transform:uppercase; margin-bottom:10px; }
-.card-body { font-size:13px; font-weight:300; color:var(--ink-soft); line-height:1.75; }
+.card-body { font-size:16px; font-weight:300; color:var(--ink-soft); line-height:1.75; }
 
 
 /* ═══════════════════════════════════
@@ -668,13 +667,13 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 
 .finale-title {
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(50px,9vw,116px); color:var(--cream);
+  font-size:clamp(50px,9vw,116px); color:#2b1f1a;
   font-weight:300; letter-spacing:0.18em; line-height:1;
   opacity:0; transform:translateY(50px);
   transition:opacity 1.2s ease,transform 1.2s cubic-bezier(0.16,1,0.3,1);
   position:relative; z-index:1;
 }
-.finale-title.in { opacity:1; transform:translateY(0); }
+.finale-title.in { opacity:1; transform:translateY(0); color:#4a3328;}
 
 .finale-rule {
   width:0; height:1px;
@@ -690,7 +689,7 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 
 .finale-coda {
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(15px,2.4vw,21px); font-style:italic; font-weight:300;
+  font-size:clamp(32px,2.4vw,21px); font-style:italic; font-weight:300;
   color:var(--stone); max-width:520px; line-height:1.9;
   margin-top:40px; opacity:0; transition:opacity 1s ease 0.8s;
   position:relative; z-index:1;
@@ -703,6 +702,70 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 
 
 /* ── RESPONSIVE ── */
+
+/* ── S2 섹션별 이미지 다양화 ──────────────────────────
+   HTML 내용은 그대로, CSS로만 각 섹션 이미지를 다르게.
+─────────────────────────────────────────────────── */
+
+/* s2-1 기본: 오른쪽에서 슬라이드인 (기존 그대로) */
+
+/* s2-2: 이미지 왼쪽 배치 + 약간 CCW 기울임 */
+#s2-2 .two-col { direction: rtl; }
+#s2-2 .two-col > * { direction: ltr; }
+#s2-2 .seal-wrap {
+  width: 320px !important;
+  height: 400px !important;
+  overflow: visible;
+  box-shadow: 12px 20px 60px rgba(0,0,0,0.2);
+}
+#s2-2 .seal-wrap.in {
+  transform: translateX(0) rotate(-2.5deg) !important;
+}
+
+/* s2-3: 텍스트 공간 넓힘 + 이미지 CW 기울임 */
+#s2-3 .two-col { grid-template-columns: 3fr 2fr; gap: 50px; }
+#s2-3 .seal-wrap {
+  width: 250px !important;
+  height: 310px !important;
+  overflow: visible;
+  box-shadow: -8px 16px 48px rgba(0,0,0,0.18);
+}
+#s2-3 .seal-wrap.in {
+  transform: translateX(0) rotate(3deg) !important;
+}
+
+/* s2-4: 이미지가 아래에서 위로 올라오는 등장 */
+#s2-4 .seal-wrap {
+  width: 320px !important;
+  height: 400px !important;
+  transform: translateY(60px) scale(0.93) !important;
+  transition: opacity 0.9s ease 0.1s,
+              transform 1s cubic-bezier(0.16,1,0.3,1) 0.1s !important;
+  box-shadow: 0 20px 64px rgba(0,0,0,0.25);
+}
+#s2-4 .seal-wrap.in {
+  transform: translateY(0) scale(1) !important;
+}
+
+/* s2-5: 이미지 크고 강한 기울임 */
+#s2-5 .two-col { grid-template-columns: 2fr 3fr; gap: 50px; }
+#s2-5 .seal-wrap {
+  width: 350px !important;
+  height: 440px !important;
+  overflow: visible;
+  box-shadow: 16px 28px 72px rgba(0,0,0,0.28);
+}
+#s2-5 .seal-wrap.in {
+  transform: translateX(0) rotate(-4deg) !important;
+}
+
+/* ── END S2 다양화 ──────────────────────────────────── */
+
+
+/* s2-4, s2-5: 헤딩·바디 더 어둡게 */
+#s2-4 h2.serif, #s2-5 h2.serif { color: #3a1e08; }
+#s2-4 .body,    #s2-5 .body    { color: #2b1f1a; }
+
 @media (max-width:680px) {
   section { padding:80px 28px; }
   .two-col { grid-template-columns:1fr; gap:40px; }
@@ -836,15 +899,9 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 ════════════════════════════════════ -->
 <section id="s-intro">
 
-  <div style="max-width:680px;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;">
+  <div style="max-width:960px;width:100%;display:flex;flex-direction:column;align-items:flex-start;text-align:left;">
 
- <img src="asset/filmposter.png" style="
-    width: 400px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-  "/>
+ <img src="asset/filmposter.png" style="width: 400px; margin-bottom: 40px; margin-left: auto; margin-right: auto; display: block; position: relative; z-index: 1; box-shadow: 0 8px 32px rgba(0,0,0,0.5);"/>
     <h1 class="intro-film-title" data-reveal="intro-film-title">The King' Warden</h1>
 
     <div class="intro-film-korean" data-reveal="intro-film-korean">왕과 사는 남자 &nbsp;·&nbsp; 2026</div>
@@ -854,13 +911,44 @@ blockquote.in { opacity: 1; transform: translateY(0); }
     <div class="intro-hook" data-reveal="intro-hook">
       <p class="intro-hook-question">
         Have you heard of <em>The King's Warden</em>?
-      </p>
-      <p class="intro-hook-body">
-        Released in 2026, it became one of the most talked-about Korean historical films in years — a quiet, devastating story about an ordinary man who chose loyalty over survival. Set in 15th-century Joseon, it follows a local magistrate who secretly buries a deposed king with his own hands, at the risk of everything he has.
-      </p>
-      <p class="intro-hook-body" style="margin-top:16px">
-        But here's what makes it extraordinary: <em>it actually happened.</em> Behind the film lies a real king, a real act of defiance, and a story that the Joseon court tried to erase from history for decades. Scroll down — we'll tell you the truth behind the screen.
-      </p>
+       </p>
+  <p class="intro-hook-body">
+    The film opens with the perspective of Lee Hong-wi (King Danjong, played by Park Ji-hoon), a young king stripped of his throne by his ambitious uncle and exiled to the rugged, remote wilderness of Cheongnyeongpo in Yeongwol. There, he meets Eom Heung-do (played by Yoo Hae-jin), a simple village chief struggling to make ends meet.
+  </p>
+  <p class="intro-hook-body" style="margin-top: 16px;">
+    While the powerful elites in the capital continue to pressure and monitor the boy-king, Eom and the villagers share their humble meals and lives with him, forming a deep, unbreakable bond. The film beautifully portrays a boy who has lost everything finding a new reason to live through these ordinary people — and the heavy, emotional journey of those who risked their lives to protect him until the very end.
+  </p>
+
+  <p class="intro-hook-question" style="margin-top: 40px;">
+    But how much of it is real?
+  </p>
+  <p class="intro-hook-body">
+    However, the film is not a 100% replica of historical events. To create a more dramatic and emotional experience, the film adds imaginative layers to the real history. Let's look at the differences between the scenes we saw on the screen and the cold, hard records of history.
+  </p>
+
+  <!-- comparison list -->
+  <div style="margin-top: 36px; text-align: left; width: 100%;">
+
+    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #a67c52;">
+      <p style="font-size: 11px; font-weight: 700; color: #a67c52; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Village Chief vs. Local Official</p>
+      <p class="intro-hook-body">In the movie, Eom Heung-do is a warm-hearted village chief who shares a father-son bond with Danjong. In actual history, however, Eom was a "Hojang," a low-ranking government official in Yeongwol. While his rank was low, his decision was much more dangerous in reality; as a public servant, defying the King's order to retrieve the body was an act of high treason that carried a much heavier risk.</p>
+    </div>
+
+    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #a67c52;">
+      <p style="font-size: 11px; font-weight: 700; color: #a67c52; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Warm Interaction vs. Strict Isolation</p>
+      <p class="intro-hook-body">The film highlights moments of Danjong building hope through his interactions with the villagers. In reality, Danjong's place of exile, "Cheongnyeongpo," was a natural prison surrounded by deep rivers on three sides. Historically, Danjong was kept in strict isolation, spending his lonely days under the constant, watchful eyes of guards.</p>
+    </div>
+
+    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #a67c52;">
+      <p style="font-size: 11px; font-weight: 700; color: #a67c52; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">The Truth Behind the Death</p>
+      <p class="intro-hook-body">The film portrays a poignant final moment where Eom Heung-do is there to see the King off. While the official records of the time (The Annals of the Joseon Dynasty) claim that Danjong committed suicide, historians today are almost certain it was an assassination ordered by King Sejo. Whether it was by royal poison or strangulation, the historical truth was far more brutal than what was shown in the cinema.</p>
+    </div>
+
+  </div>
+
+  <p class="intro-hook-question" style="margin-top: 48px; font-size: clamp(16px, 2vw, 22px);">
+    Now, let's go beyond the movie and explore the real history in more detail.
+  </p>
     </div></div>
 
   </div>
@@ -909,6 +997,66 @@ blockquote.in { opacity: 1; transform: translateY(0); }
     <p class="body">Danjong was the sixth king of the Joseon Dynasty and is remembered as the most sorrowful figure in Korean history. Crowned at the young age of 12, his reign was cut short by a bloody coup led by his own uncle, King Sejo.
 
 Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a series of lonely struggles. His story is not just about a fallen king, but a testament to unwavering loyalty—represented by those who risked everything to protect him, even in death.</p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ════════════════════════
+     S3 · TIMELINE
+════════════════════════ -->
+<section id="s3">
+  <div class="tl-header" data-reveal="tl-header">
+    <span class="eyebrow">Chronicle of a Reign</span>
+    <h2 class="serif">Swept Away by Power</h2>
+  </div>
+  <div class="tl-wrap">
+    <div class="tl-spine" data-reveal="tl-spine"></div>
+
+    <div class="tl-item" data-tl-item>
+      <div class="tl-box"><div class="tl-box-accent"></div><div class="curtain curtain-left"></div>
+        <div class="tl-box-content">
+          <div class="tl-year">1452</div><div class="tl-title">Enthronement</div>
+          <div class="tl-body"></div>
+        </div>
+      </div><div class="tl-node"></div>
+    </div>
+
+    <div class="tl-item" data-tl-item>
+      <div class="tl-box"><div class="tl-box-accent"></div><div class="curtain curtain-right"></div>
+        <div class="tl-box-content">
+          <div class="tl-year">1453</div><div class="tl-title">Coup of Gyeyu</div>
+          <div class="tl-body"></div>
+        </div>
+      </div><div class="tl-node"></div>
+    </div>
+
+    <div class="tl-item" data-tl-item>
+      <div class="tl-box"><div class="tl-box-accent"></div><div class="curtain curtain-left"></div>
+        <div class="tl-box-content">
+          <div class="tl-year">1455</div><div class="tl-title">Forced Abdication</div>
+          <div class="tl-body"></div>
+        </div>
+      </div><div class="tl-node"></div>
+    </div>
+
+    <div class="tl-item" data-tl-item>
+      <div class="tl-box"><div class="tl-box-accent"></div><div class="curtain curtain-right"></div>
+        <div class="tl-box-content">
+          <div class="tl-year">1456</div><div class="tl-title">The Six Martyred Ministers</div>
+          <div class="tl-body"></div>
+        </div>
+      </div><div class="tl-node"></div>
+    </div>
+
+    <div class="tl-item" data-tl-item>
+      <div class="tl-box"><div class="tl-box-accent" style="background:linear-gradient(to right,var(--crimson),var(--crimson))"></div><div class="curtain curtain-left"></div>
+        <div class="tl-box-content">
+          <div class="tl-year">1457</div><div class="tl-title">Exile &amp; Death</div>
+          <div class="tl-body"></div>
+        </div>
+      </div><div class="tl-node"></div>
+    </div>
   </div>
 </section>
 
@@ -1043,9 +1191,50 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
 <section id="s2-4">
   <div class="two-col">
     <div class="col-left" data-reveal="col-left">
+      <span class="eyebrow">1456 · The Six Martyred Ministers</span>
+      <h2 class="serif">The Failed Restoration</h2>
+      <p class="body">Loyal subjects, including the famous "Six Martyred Ministers" (Sayuksin), risked everything to restore Danjong to his rightful throne. However, their secret plan was betrayed and discovered. King Sejo responded with a brutal purge, executing the conspirators and their families. This event ended any hope for Danjong’s return and sealed his tragic fate.</p>
+    </div>
+
+    <div class="seal-wrap" data-reveal="seal-wrap">
+      <svg viewBox="0 0 210 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block">
+        <defs>
+          <linearGradient id="seal-bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ede5d8"/><stop offset="100%" stop-color="#d8cbb8"/>
+          </linearGradient>
+          <linearGradient id="seal-stamp" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8b5e3c"/><stop offset="100%" stop-color="#5a3820"/>
+          </linearGradient>
+        </defs>
+        <rect width="210" height="260" fill="url(#seal-bg)"/>
+        <rect x="10" y="10" width="190" height="240" fill="none" stroke="#a67c52" stroke-width="1.2"/>
+        <rect x="16" y="16" width="178" height="228" fill="none" stroke="#c9b7a3" stroke-width="0.6"/>
+        <path d="M10,10 L28,10 L28,12 L12,12 L12,28 L10,28 Z" fill="#8b5e3c"/>
+        <path d="M200,10 L182,10 L182,12 L198,12 L198,28 L200,28 Z" fill="#8b5e3c"/>
+        <path d="M10,250 L28,250 L28,248 L12,248 L12,232 L10,232 Z" fill="#8b5e3c"/>
+        <path d="M200,250 L182,250 L182,248 L198,248 L198,232 L200,232 Z" fill="#8b5e3c"/>
+        <rect x="55" y="75" width="100" height="110" rx="4" fill="url(#seal-stamp)" opacity="0.9"/>
+        <rect x="60" y="80" width="90" height="100" rx="2" fill="none" stroke="#c9a44e" stroke-width="0.8" opacity="0.5"/>
+        <text x="105" y="148" font-family="Cormorant Garamond, serif" font-size="56" fill="#f2ede4" text-anchor="middle" opacity="0.9" font-weight="300">璽</text>
+        <rect x="88" y="55" width="34" height="22" rx="3" fill="#6b4228"/>
+        <rect x="93" y="50" width="24" height="10" rx="2" fill="#7a4d30"/>
+        <path d="M30,180 Q40,172 50,178 Q55,168 65,174 Q68,164 78,170" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
+        <path d="M130,190 Q140,182 150,188 Q155,178 165,184 Q168,174 178,180" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
+        <text x="105" y="230" font-family="Inter, sans-serif" font-size="8" fill="#8b5e3c" text-anchor="middle" letter-spacing="3" font-weight="700">ROYAL SEAL</text>
+        <line x1="55" y1="222" x2="155" y2="222" stroke="#c9b7a3" stroke-width="0.6"/>
+      </svg>
+      <div class="curtain curtain-right"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="s2-5">
+  <div class="two-col">
+    <div class="col-left" data-reveal="col-left">
       <span class="eyebrow">1457 · Exile & Death</span>
-      <h2 class="serif">Exile and the Final Silence</h2>
-      <p class="body">Under immense pressure and threats to his life, Danjong was forced to give up his crown to his uncle, who then became King Sejo. Danjong was demoted to "Sang-wang" (Retired King) and moved to a smaller palace, living a life of isolation and constant surveillance.</p>
+      <h2 class="serif">Demotion, Exile, and a Mysterious Death</h2>
+      <p class="body">Following the failed restoration attempts, Danjong was demoted to 'Prince Nosan' and exiled to the remote mountains of Yeongwol. No longer a king, he lived in isolation until his life was cut short at age 17. While official records claim suicide, it is widely believed he was assassinated on Sejo’s orders—either by royal poison or strangulation.</p>
     </div>
 
     <div class="seal-wrap" data-reveal="seal-wrap">
@@ -1082,56 +1271,7 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
 
 <div class="section-divider"></div>
 
-<!-- ════════════════════════
-     S3 · TIMELINE
-════════════════════════ -->
-<section id="s3">
-  <div class="tl-header" data-reveal="tl-header">
-    <span class="eyebrow">Chronicle of a Reign</span>
-    <h2 class="serif">Swept Away by Power</h2>
-  </div>
-  <div class="tl-wrap">
-    <div class="tl-spine" data-reveal="tl-spine"></div>
 
-    <div class="tl-item" data-tl-item>
-      <div class="tl-box"><div class="tl-box-accent"></div><div class="curtain curtain-left"></div>
-        <div class="tl-box-content">
-          <div class="tl-year">1452</div><div class="tl-title">Enthronement</div>
-          <div class="tl-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien vel nisl euismod commodo proin.</div>
-        </div>
-      </div><div class="tl-node"></div>
-    </div>
-
-    <div class="tl-item" data-tl-item>
-      <div class="tl-box"><div class="tl-box-accent"></div><div class="curtain curtain-right"></div>
-        <div class="tl-box-content">
-          <div class="tl-year">1453</div><div class="tl-title">Coup of Gyeyu</div>
-          <div class="tl-body">Proin efficitur nisl a tempor dignissim, arcu nunc pretium nisi tincidunt diam sapien in lorem.</div>
-        </div>
-      </div><div class="tl-node"></div>
-    </div>
-
-    <div class="tl-item" data-tl-item>
-      <div class="tl-box"><div class="tl-box-accent"></div><div class="curtain curtain-left"></div>
-        <div class="tl-box-content">
-          <div class="tl-year">1455</div><div class="tl-title">Forced Abdication</div>
-          <div class="tl-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae quisque.</div>
-        </div>
-      </div><div class="tl-node"></div>
-    </div>
-
-    <div class="tl-item" data-tl-item>
-      <div class="tl-box"><div class="tl-box-accent" style="background:linear-gradient(to right,var(--crimson),var(--crimson))"></div><div class="curtain curtain-right"></div>
-        <div class="tl-box-content">
-          <div class="tl-year">1457</div><div class="tl-title">Exile &amp; Death</div>
-          <div class="tl-body">Quisque at libero feugiat lacinia nunc vel tincidunt libero. Etiam commodo volutpat risus.</div>
-        </div>
-      </div><div class="tl-node"></div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
 
 <!-- ════════════════════════
      S4 · EOMHEUNGDO
@@ -1156,10 +1296,14 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
   </div>
 
   <div class="s4-text" data-reveal="s4-text">
-    <div class="s4-badge">Loyal Subject &nbsp;·&nbsp; Magistrate of Yeongwol</div>
-    <h2 class="serif">The Last Act of Loyalty</h2>
-    <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur enim vel sodales varius arcu libero efficitur lectus quis accumsan. Proin euismod erat a ante viverra in tristique urna lacinia donec efficitur vestibulum.</p>
-    <p class="body" style="margin-top:14px">Posuere cubilia curae quisque at libero feugiat lacinia nunc vel tincidunt libero. Nam condimentum sapien a enim condimentum et vehicula erat maximus.</p>
+    <div class="s4-badge">A low-ranking local official (Hojang) in Yeongwol</div>
+    <h2 class="serif">The Man of Eternal Loyalty: Eom Heung-do</h2>
+    <p class="body">After the tragic death of the deposed King Danjong, his body was left abandoned in the Donggang River under strict orders from the central government: "Anyone who dares to retrieve the body will be executed along with their entire family."
+
+Despite this terrifying threat, Eom Heung-do, a low-ranking official in Yeongwol, could not leave his King in the cold water. He took the body from the river and gave the King a proper burial at the foot of Mount Bongnae.</p>
+    <p class="body" style="margin-top:24px">Knowing that King Sejo's decree still hung over his family like a death sentence, Eom Heung-do made the painful decision to scatter his household across the country. He sent his sons to distant regions — one to Yecheon, another to Ulsan — and he himself fled to Gunwi in present-day North Gyeongsang Province with his second son, where he lived out the remainder of his days in quiet hiding. He never returned to Yeongwol.</p>
+    <p class="body" style="margin-top:24px">For nearly two and a half centuries, his act of courage went without official recognition. Then, in 1698, when King Sukjong finally restored Danjong's royal title, the tide of history turned. Eom Heung-do was posthumously awarded a government rank and enshrined alongside the Six Martyred Ministers at Changjeolsa Shrine in Yeongwol — the very town where his King had suffered and died.</p>
+    <p class="body" style="margin-top:24px">His honor only grew with time. In the late 19th century, King Gojong bestowed upon him the posthumous title of <strong>Chunguigong (忠毅公)</strong> — <em>"Lord of Loyal Valor"</em> — and elevated him to the rank of Minister of Works. Today, Eom Heung-do is remembered not as a powerful nobleman or a celebrated general, but as an ordinary man who chose to do the right thing when no one else would — and who paid for that choice with a lifetime of exile and silence.</p>
   </div>
 </section>
 
@@ -1180,47 +1324,18 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
 
     <span class="q-open" data-reveal="q-open">"</span>
     <span class="q-context" data-reveal="q-context">The words that define Eom Heung-do's spirit</span>
-    <span class="q-context-note" data-reveal="q-context-note">
-      This phrase, 爲善被禍 吾所甘心, captures the loyalty and self-sacrifice of Eom Heung-do (嚴興道) — the man who risked everything to give King Danjong a proper burial. It is not a direct quote, but the philosophy that guided his life.
-    </span>
+  
     <div class="q-hanja" data-reveal="q-hanja">爲善被禍 吾所甘心</div>
     <blockquote data-reveal="blockquote">
-      Though I suffer calamity for doing what is good,<br>I accept it willingly.
+      I will gladly accept any punishment for doing what is right.
     </blockquote>
-    <div class="q-attr" data-reveal="q-attr">Reflecting the spirit of Eom Heung-do (嚴興道) · Yeongwol, 1457</div>
+  
     <div class="q-orn" data-reveal="q-orn">
       <div class="orn-line"></div><div class="orn-diamond"></div><div class="orn-line"></div>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-<!-- ════════════════════════
-     S6 · LEGACY CARDS
-════════════════════════ -->
-<section id="s6">
-  <div class="legacy-wrap">
-    <div class="legacy-hd" data-reveal="legacy-hd">
-      <span class="eyebrow">Remembered Across Centuries</span>
-      <h2 class="serif">A Tragic Legacy That Endures</h2>
-    </div>
-    <div class="cards">
-      <div class="card" data-reveal="lc1">
-        <div class="curtain curtain-bottom"></div><div class="card-stripe"></div>
-        <div class="card-inner"><div class="card-num">I</div><div class="card-ttl">Posthumous Restoration</div><div class="card-body">Lorem ipsum dolor sit amet consectetur adipiscing elit sed vitae sapien vel nisl euismod commodo proin efficitur nisl.</div></div>
-      </div>
-      <div class="card" data-reveal="lc2">
-        <div class="curtain curtain-bottom"></div><div class="card-stripe"></div>
-        <div class="card-inner"><div class="card-num">II</div><div class="card-ttl">Royal Commemoration</div><div class="card-body">Proin euismod erat a ante viverra in tristique urna lacinia donec efficitur enim vel sodales varius arcu.</div></div>
-      </div>
-      <div class="card" data-reveal="lc3">
-        <div class="curtain curtain-bottom"></div><div class="card-stripe"></div>
-        <div class="card-inner"><div class="card-num">III</div><div class="card-ttl">Cultural Memory</div><div class="card-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae quisque libero.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <div class="section-divider"></div>
 
@@ -1239,9 +1354,9 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
   <div class="finale-rule"  data-reveal="finale-rule"></div>
   <div class="finale-dates" data-reveal="finale-dates">1441 — 1457</div>
   <p class="finale-coda"   data-reveal="finale-coda">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien vel nisl euismod commodo. In tristique urna lacinia donec efficitur enim vel sodales varius.
+    A king whose crown was lost to greed, but whose soul remains a symbol of eternal sorrow.
   </p>
-  <div class="finale-stamp" data-reveal="finale-stamp">Annals of the Joseon Dynasty &nbsp;·&nbsp; Veritable Records of Danjong</div>
+
 </section>
 
 <script>
@@ -1309,6 +1424,6 @@ const tlObs = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.12 });
 if (tlItems.length) tlObs.observe(tlItems[0]);
-</script>
+</script> 
 </body>
 </html>
