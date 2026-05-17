@@ -66,7 +66,7 @@ body {
 
 /* Force light text colors on dark gradient zones */
 #s0 #s0-sub        { color: var(--terra); }
-#s-intro .intro-hook-body { font-size: 18px; font-weight: 300; line-height: 1.9; color: #ffffff; max-width: none; margin: 0; }
+#s-intro .intro-hook-body { font-size: 18px; font-weight: 300; line-height: 1.9; color: #f5f0e8; max-width: none; margin: 0; }
 
 /* paper grain overlay */
 body::before {
@@ -203,12 +203,7 @@ h2.serif {
   line-height: 1.6; margin-bottom: 28px;
 }
 
-.intro-hook-body {
-  font-size: 14px; font-weight: 300;
-  color: var(--stone); opacity: 0.75;
-  line-height: 1.9; max-width: 540px;
-  margin: 0 auto;
-}
+.intro-hook-body { font-size: 18px; font-weight: 300; line-height: 1.9; color: #f5f0e8; max-width: none; margin: 0; }
 
 
 .intro-cta.in { opacity: 1; }
@@ -261,7 +256,7 @@ h2.serif {
 #s-intro .intro-film-title    { color: #ede0c8; }
 #s-intro .intro-film-korean   { color: #a67c52; }
 #s-intro .intro-hook-question { color: #e8d5be; }
-#s-intro .intro-hook-body     { color: #ffffff; }
+#s-intro .intro-hook-body     { color: #f5f0e8; }
 #s-intro .intro-rule          { background: linear-gradient(90deg,transparent,#a67c52,transparent); }
 
 /* S1: cream zone — dark text */
@@ -285,7 +280,7 @@ h2.serif {
 /* S4: dark zone */
 #s4 .eyebrow        { color: #a67c52; }
 #s4 h2.serif        { color: #ddc9aa; }
-#s4 .body           { color: #ffffff; }
+#s4 .body           { color: #f5f0e8; }
 #s4 .s4-badge       { color: #c9b7a3; border-color: #c9b7a3; font-size: 15px; }
 #s4 .portrait-name  { color: #c9b7a3; }
 #s4 .portrait-hanja { color: #a67c52; }
@@ -319,7 +314,7 @@ h2.serif {
 }
 
 .film-wrap {
-  width: min(920px, 92vw); margin-bottom: 200px;
+  width: min(960px, 92vw); margin-bottom: 200px;
   opacity: 0; transform: translateY(30px);
   transition: opacity 1s ease, transform 1s cubic-bezier(0.16,1,0.3,1);
 }
@@ -653,8 +648,8 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 .card:nth-child(3) .card-stripe { background:linear-gradient(to right,var(--terra),var(--stone)); }
 
 .card-inner { padding:26px 24px; position:relative; z-index:2; }
-.card-num  { font-family:'Cormorant Garamond',serif; font-size:52px; color:var(--stone); font-weight:300; line-height:1; margin-bottom:10px; }
-.card-ttl  { font-size:10px; font-weight:700; color:var(--crimson); letter-spacing:2px; text-transform:uppercase; margin-bottom:10px; }
+.card-num  { font-family:'Cormorant Garamond',serif; font-size:52px; color:var(--stone); font-weight:300; line-height:1; margin-bottom:22px; }
+.card-ttl  { font-size:10px; font-weight:700; color:var(--crimson); letter-spacing:2px; text-transform:uppercase; margin-bottom:22px; }
 .card-body { font-size:16px; font-weight:300; color:var(--ink-soft); line-height:1.75; }
 
 
@@ -723,10 +718,10 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 }
 
 /* s2-3: 텍스트 공간 넓힘 + 이미지 CW 기울임 */
-#s2-3 .two-col { grid-template-columns: 3fr 2fr; gap: 50px; }
+#s2-3 .two-col { grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 #s2-3 .seal-wrap {
-  width: 250px !important;
-  height: 310px !important;
+  width: 460px !important;
+  height: 300px !important;
   overflow: visible;
   box-shadow: -8px 16px 48px rgba(0,0,0,0.18);
 }
@@ -748,10 +743,10 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 }
 
 /* s2-5: 이미지 크고 강한 기울임 */
-#s2-5 .two-col { grid-template-columns: 2fr 3fr; gap: 50px; }
+#s2-5 .two-col { grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 #s2-5 .seal-wrap {
-  width: 350px !important;
-  height: 440px !important;
+  width: 460px !important;
+  height: 300px !important;
   overflow: visible;
   box-shadow: 16px 28px 72px rgba(0,0,0,0.28);
 }
@@ -1115,32 +1110,7 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
     </div>
 
     <div class="seal-wrap" data-reveal="seal-wrap">
-      <svg viewBox="0 0 210 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block">
-        <defs>
-          <linearGradient id="seal-bg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#ede5d8"/><stop offset="100%" stop-color="#d8cbb8"/>
-          </linearGradient>
-          <linearGradient id="seal-stamp" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#8b5e3c"/><stop offset="100%" stop-color="#5a3820"/>
-          </linearGradient>
-        </defs>
-        <rect width="210" height="260" fill="url(#seal-bg)"/>
-        <rect x="10" y="10" width="190" height="240" fill="none" stroke="#a67c52" stroke-width="1.2"/>
-        <rect x="16" y="16" width="178" height="228" fill="none" stroke="#c9b7a3" stroke-width="0.6"/>
-        <path d="M10,10 L28,10 L28,12 L12,12 L12,28 L10,28 Z" fill="#8b5e3c"/>
-        <path d="M200,10 L182,10 L182,12 L198,12 L198,28 L200,28 Z" fill="#8b5e3c"/>
-        <path d="M10,250 L28,250 L28,248 L12,248 L12,232 L10,232 Z" fill="#8b5e3c"/>
-        <path d="M200,250 L182,250 L182,248 L198,248 L198,232 L200,232 Z" fill="#8b5e3c"/>
-        <rect x="55" y="75" width="100" height="110" rx="4" fill="url(#seal-stamp)" opacity="0.9"/>
-        <rect x="60" y="80" width="90" height="100" rx="2" fill="none" stroke="#c9a44e" stroke-width="0.8" opacity="0.5"/>
-        <text x="105" y="148" font-family="Cormorant Garamond, serif" font-size="56" fill="#f2ede4" text-anchor="middle" opacity="0.9" font-weight="300">璽</text>
-        <rect x="88" y="55" width="34" height="22" rx="3" fill="#6b4228"/>
-        <rect x="93" y="50" width="24" height="10" rx="2" fill="#7a4d30"/>
-        <path d="M30,180 Q40,172 50,178 Q55,168 65,174 Q68,164 78,170" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
-        <path d="M130,190 Q140,182 150,188 Q155,178 165,184 Q168,174 178,180" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
-        <text x="105" y="230" font-family="Inter, sans-serif" font-size="8" fill="#8b5e3c" text-anchor="middle" letter-spacing="3" font-weight="700">ROYAL SEAL</text>
-        <line x1="55" y1="222" x2="155" y2="222" stroke="#c9b7a3" stroke-width="0.6"/>
-      </svg>
+      <img src="asset/sejo.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
       <div class="curtain curtain-right"></div>
     </div>
   </div>
@@ -1156,32 +1126,8 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
     </div>
 
     <div class="seal-wrap" data-reveal="seal-wrap">
-      <svg viewBox="0 0 210 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block">
-        <defs>
-          <linearGradient id="seal-bg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#ede5d8"/><stop offset="100%" stop-color="#d8cbb8"/>
-          </linearGradient>
-          <linearGradient id="seal-stamp" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#8b5e3c"/><stop offset="100%" stop-color="#5a3820"/>
-          </linearGradient>
-        </defs>
-        <rect width="210" height="260" fill="url(#seal-bg)"/>
-        <rect x="10" y="10" width="190" height="240" fill="none" stroke="#a67c52" stroke-width="1.2"/>
-        <rect x="16" y="16" width="178" height="228" fill="none" stroke="#c9b7a3" stroke-width="0.6"/>
-        <path d="M10,10 L28,10 L28,12 L12,12 L12,28 L10,28 Z" fill="#8b5e3c"/>
-        <path d="M200,10 L182,10 L182,12 L198,12 L198,28 L200,28 Z" fill="#8b5e3c"/>
-        <path d="M10,250 L28,250 L28,248 L12,248 L12,232 L10,232 Z" fill="#8b5e3c"/>
-        <path d="M200,250 L182,250 L182,248 L198,248 L198,232 L200,232 Z" fill="#8b5e3c"/>
-        <rect x="55" y="75" width="100" height="110" rx="4" fill="url(#seal-stamp)" opacity="0.9"/>
-        <rect x="60" y="80" width="90" height="100" rx="2" fill="none" stroke="#c9a44e" stroke-width="0.8" opacity="0.5"/>
-        <text x="105" y="148" font-family="Cormorant Garamond, serif" font-size="56" fill="#f2ede4" text-anchor="middle" opacity="0.9" font-weight="300">璽</text>
-        <rect x="88" y="55" width="34" height="22" rx="3" fill="#6b4228"/>
-        <rect x="93" y="50" width="24" height="10" rx="2" fill="#7a4d30"/>
-        <path d="M30,180 Q40,172 50,178 Q55,168 65,174 Q68,164 78,170" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
-        <path d="M130,190 Q140,182 150,188 Q155,178 165,184 Q168,174 178,180" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
-        <text x="105" y="230" font-family="Inter, sans-serif" font-size="8" fill="#8b5e3c" text-anchor="middle" letter-spacing="3" font-weight="700">ROYAL SEAL</text>
-        <line x1="55" y1="222" x2="155" y2="222" stroke="#c9b7a3" stroke-width="0.6"/>
-      </svg>
+      <img src="asset/crp.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
+      <p style="font-size:11px;color:#7a6050;margin-top:8px;font-style:italic;line-height:1.5;">Cheongnyeongpo, Yeongwol — the exile site of King Danjong (Photo: Yonhap News)</p>
       <div class="curtain curtain-right"></div>
     </div>
   </div>
@@ -1191,7 +1137,7 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
 <section id="s2-4">
   <div class="two-col">
     <div class="col-left" data-reveal="col-left">
-      <span class="eyebrow">1456 · The Six Martyred Ministers</span>
+      <span class="eyebrow" style="color:#5a1a1a;">1456 · The Six Martyred Ministers</span>
       <h2 class="serif">The Failed Restoration</h2>
       <p class="body">Loyal subjects, including the famous "Six Martyred Ministers" (Sayuksin), risked everything to restore Danjong to his rightful throne. However, their secret plan was betrayed and discovered. King Sejo responded with a brutal purge, executing the conspirators and their families. This event ended any hope for Danjong’s return and sealed his tragic fate.</p>
     </div>
@@ -1232,38 +1178,14 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
 <section id="s2-5">
   <div class="two-col">
     <div class="col-left" data-reveal="col-left">
-      <span class="eyebrow">1457 · Exile & Death</span>
+      <span class="eyebrow" style="color:#5a1a1a;">1457 · Exile & Death</span>
       <h2 class="serif">Demotion, Exile, and a Mysterious Death</h2>
       <p class="body">Following the failed restoration attempts, Danjong was demoted to 'Prince Nosan' and exiled to the remote mountains of Yeongwol. No longer a king, he lived in isolation until his life was cut short at age 17. While official records claim suicide, it is widely believed he was assassinated on Sejo’s orders—either by royal poison or strangulation.</p>
     </div>
 
     <div class="seal-wrap" data-reveal="seal-wrap">
-      <svg viewBox="0 0 210 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block">
-        <defs>
-          <linearGradient id="seal-bg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#ede5d8"/><stop offset="100%" stop-color="#d8cbb8"/>
-          </linearGradient>
-          <linearGradient id="seal-stamp" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#8b5e3c"/><stop offset="100%" stop-color="#5a3820"/>
-          </linearGradient>
-        </defs>
-        <rect width="210" height="260" fill="url(#seal-bg)"/>
-        <rect x="10" y="10" width="190" height="240" fill="none" stroke="#a67c52" stroke-width="1.2"/>
-        <rect x="16" y="16" width="178" height="228" fill="none" stroke="#c9b7a3" stroke-width="0.6"/>
-        <path d="M10,10 L28,10 L28,12 L12,12 L12,28 L10,28 Z" fill="#8b5e3c"/>
-        <path d="M200,10 L182,10 L182,12 L198,12 L198,28 L200,28 Z" fill="#8b5e3c"/>
-        <path d="M10,250 L28,250 L28,248 L12,248 L12,232 L10,232 Z" fill="#8b5e3c"/>
-        <path d="M200,250 L182,250 L182,248 L198,248 L198,232 L200,232 Z" fill="#8b5e3c"/>
-        <rect x="55" y="75" width="100" height="110" rx="4" fill="url(#seal-stamp)" opacity="0.9"/>
-        <rect x="60" y="80" width="90" height="100" rx="2" fill="none" stroke="#c9a44e" stroke-width="0.8" opacity="0.5"/>
-        <text x="105" y="148" font-family="Cormorant Garamond, serif" font-size="56" fill="#f2ede4" text-anchor="middle" opacity="0.9" font-weight="300">璽</text>
-        <rect x="88" y="55" width="34" height="22" rx="3" fill="#6b4228"/>
-        <rect x="93" y="50" width="24" height="10" rx="2" fill="#7a4d30"/>
-        <path d="M30,180 Q40,172 50,178 Q55,168 65,174 Q68,164 78,170" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
-        <path d="M130,190 Q140,182 150,188 Q155,178 165,184 Q168,174 178,180" stroke="#a67c52" stroke-width="0.7" fill="none" opacity="0.4"/>
-        <text x="105" y="230" font-family="Inter, sans-serif" font-size="8" fill="#8b5e3c" text-anchor="middle" letter-spacing="3" font-weight="700">ROYAL SEAL</text>
-        <line x1="55" y1="222" x2="155" y2="222" stroke="#c9b7a3" stroke-width="0.6"/>
-      </svg>
+      <img src="asset/last.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
+      <p style="font-size:11px;color:#c9b7a3;margin-top:8px;font-style:italic;line-height:1.5;">A scene from <em>The King's Warden</em> in which Danjong (Park Ji-hoon) takes his own life.</p>
       <div class="curtain curtain-right"></div>
     </div>
   </div>
@@ -1350,6 +1272,11 @@ Despite this terrifying threat, Eom Heung-do, a low-ranking official in Yeongwol
     <path d="M120,300 L400,20 L680,300 L400,580 Z" fill="none" stroke="#8b5e3c" stroke-width="1"/>
     <text x="400" y="330" font-family="Cormorant Garamond,serif" font-size="130" fill="#a67c52" text-anchor="middle" opacity="0.2" font-weight="300">端</text>
   </svg>
+  <p style="font-size:11px;color:#a67c52;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;position:relative;z-index:1;">Jangneung Royal Tomb of King Danjong, Yeongwol</p>
+  <div style="position:relative;width:min(560px,80vw);margin:0 auto 48px;z-index:1;" data-reveal="grave-img">
+    <img src="asset/grave.png" style="width:100%;display:block;object-fit:cover;"/>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to bottom,transparent,#2e1e10);pointer-events:none;"></div>
+  </div>
   <h2 class="finale-title" data-reveal="finale-title">King Danjong</h2>
   <div class="finale-rule"  data-reveal="finale-rule"></div>
   <div class="finale-dates" data-reveal="finale-dates">1441 — 1457</div>
