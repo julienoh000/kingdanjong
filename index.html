@@ -97,13 +97,13 @@ section {
 /* ── TYPOGRAPHY ── */
 .eyebrow {
   display: block; font-size: 12px; font-weight: 700;
-  color: var(--terra); letter-spacing: 4px; text-transform: uppercase;
+  color:#4a3328; letter-spacing: 4px; text-transform: uppercase;
   margin-bottom: 14px;
 }
 h2.serif {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(28px,4vw,48px); color: var(--copper);
-  font-weight: 400; line-height: 1.15; margin-bottom: 18px;
+  font-size: clamp(28px,4vw,38px); color: var(--copper);
+  font-weight: 400; line-height: 1.15; margin-bottom: 50px;
 }
 .body {
   font-size: 18px; font-weight: 300;
@@ -142,7 +142,7 @@ h2.serif {
 }
 
 .intro-eyebrow {
-  font-size: 10px; font-weight: 700; color: var(--terra);
+  font-size: 10px; font-weight: 700; color:#4a3328;
   letter-spacing: 5px; text-transform: uppercase;
   opacity: 0; transition: opacity 0.8s ease;
   margin-bottom: 28px;
@@ -198,9 +198,10 @@ h2.serif {
 
 .intro-hook-question {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(20px, 2.8vw, 28px);
-  font-style: italic; color: var(--stone);
+  font-size: clamp(20px, 4.0vw, 34px);
+  font-style: italic; color:#f6f2ed;
   line-height: 1.6; margin-bottom: 28px;
+  max-width: 4000px;
 }
 
 .intro-hook-body { font-size: 18px; font-weight: 300; line-height: 1.9; color: #f5f0e8; max-width: none; margin: 0; }
@@ -260,8 +261,8 @@ h2.serif {
 #s-intro .intro-rule          { background: linear-gradient(90deg,transparent,#a67c52,transparent); }
 
 /* S1: cream zone — dark text */
-#s1 .eyebrow   { color: #a67c52; }
-#s1 h2.serif   { color: #8b5e3c; }
+#s1 .eyebrow   { color: #77593a; }
+#s1 h2.serif   { color: #5a3c26; }
 #s1 .body      { color: #4a3328; }
 
 /* S2: warm cream — dark text */
@@ -280,8 +281,8 @@ h2.serif {
 /* S4: dark zone */
 #s4 .eyebrow        { color: #a67c52; }
 #s4 h2.serif        { color: #ddc9aa; }
-#s4 .body           { color: #f5f0e8; }
-#s4 .s4-badge       { color: #c9b7a3; border-color: #c9b7a3; font-size: 15px; }
+#s4 .body           { color: #e5d7c1; }
+#s4 .s4-badge       { color: #c9b7a3; border-color: #c9b7a3; font-size: 12px; }
 #s4 .portrait-name  { color: #c9b7a3; }
 #s4 .portrait-hanja { color: #a67c52; }
 
@@ -357,10 +358,10 @@ h2.serif {
 .film-feature-overlay { position: absolute; inset: 0; background: linear-gradient(125deg,rgba(14,8,4,0.95) 0%,rgba(14,8,4,0.75) 100%); }
 
 .feature-label  { font-size: 9px; font-weight: 700; color: var(--terra); letter-spacing: 4px; text-transform: uppercase; position: relative; z-index: 1; margin-bottom: 6px; }
-.feature-title  { font-family: 'Cormorant Garamond',serif; font-size: clamp(20px,3.5vw,36px); color: var(--cream); letter-spacing: 3px; font-weight: 300; position: relative; z-index: 1; line-height: 1.1; }
+.feature-title  { font-family: 'Cormorant Garamond',serif; font-size: clamp(24px,3.5vw,36px); color: var(--cream); letter-spacing: 3px; font-weight: 300; position: relative; z-index: 1; line-height: 1.1; }
 .feature-korean { font-family: 'Cormorant Garamond',serif; font-size: 13px; color: var(--stone); letter-spacing: 2px; margin-top: 4px; position: relative; z-index: 1; }
 .feature-year   { font-size: 10px; color: var(--terra); letter-spacing: 3px; margin-top: 8px; position: relative; z-index: 1; }
-.feature-desc   { font-family: 'Cormorant Garamond',serif; font-size: 16px; font-style: italic; color: var(--stone); line-height: 1.6; max-width: 340px; margin-top: 10px; position: relative; z-index: 1; }
+.feature-desc   { font-family: 'Cormorant Garamond',serif; font-size: 20px; font-style: italic; color: var(--stone); line-height: 1.6; max-width: 400px; margin-top: 30px; position: relative; z-index: 1; }
 
 #s0-title {
   margin-top: 0;
@@ -396,7 +397,7 @@ h2.serif {
 /* ═══════════════════════════════════
    S1 · BIRTH  (light parchment)
 ═══════════════════════════════════ */
-#s1 { flex-direction: column; gap: 56px; text-align: center; }
+#s1 { flex-direction: column; gap: 56px; text-align:left; }
 
 .iris-stage { position: relative; width: 540px; height: 540px; margin: 0 auto; }
 .iris-outer {
@@ -685,8 +686,8 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 .finale-coda {
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(32px,2.4vw,21px); font-style:italic; font-weight:300;
-  color:var(--stone); max-width:520px; line-height:1.9;
-  margin-top:40px; opacity:0; transition:opacity 1s ease 0.8s;
+  color:var(--stone); max-width:600px; line-height:1.9;
+  margin-top:40px; margin-bottom: 40px; opacity:0; transition:opacity 1s ease 0.8s;
   position:relative; z-index:1;
 }
 .finale-coda.in { opacity:1; }
@@ -703,7 +704,8 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 ─────────────────────────────────────────────────── */
 
 /* s2-1 기본: 오른쪽에서 슬라이드인 (기존 그대로) */
-#s2-1 .seal-wrap { width: 340px !important; height: 340px !important; }
+#s2-1 .seal-wrap { width: 400px !important; height: 400px !important; margin-top: 50px;
+box-shadow: 12px 20px 60px rgba(0,0,0,0.2);}
 
 /* s2-2: 이미지 왼쪽 배치 + 약간 CCW 기울임 */
 #s2-2 .two-col { direction: rtl; }
@@ -760,7 +762,9 @@ blockquote.in { opacity: 1; transform: translateY(0); }
 
 /* s2-4, s2-5: 헤딩·바디 더 어둡게 */
 #s2-4 h2.serif, #s2-5 h2.serif { color: #3a1e08; }
-#s2-4 .body,    #s2-5 .body    { color: #2b1f1a; }
+#s2-4 .body { color: #2f271e; }
+
+#s2-5 .body    { color: #dec7ad; }
 
 @media (max-width:680px) {
   section { padding:80px 28px; }
@@ -911,7 +915,7 @@ blockquote.in { opacity: 1; transform: translateY(0); }
     While the powerful elites in the capital continue to pressure and monitor the boy-king, Eom and the villagers share their humble meals and lives with him, forming a deep, unbreakable bond. The film beautifully portrays a boy who has lost everything finding a new reason to live through these ordinary people — and the heavy, emotional journey of those who risked their lives to protect him until the very end.
   </p>
 
-  <p class="intro-hook-question" style="margin-top: 40px;">
+  <p class="intro-hook-question" style="margin-top: 80px;">
     But how much of it is real?
   </p>
   <p class="intro-hook-body">
@@ -919,26 +923,26 @@ blockquote.in { opacity: 1; transform: translateY(0); }
   </p>
 
   <!-- comparison list -->
-  <div style="margin-top: 36px; text-align: left; width: 100%;">
+  <div style="margin-top: 40px; text-align: left; width: 100%;">
 
-    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #a67c52;">
-      <p style="font-size: 11px; font-weight: 700; color: #a67c52; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Village Chief vs. Local Official</p>
+    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #e0b385;">
+      <p style="font-size: 14px; font-weight: 700; color: #e0b385; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Village Chief vs. Local Official</p>
       <p class="intro-hook-body">In the movie, Eom Heung-do is a warm-hearted village chief who shares a father-son bond with Danjong. In actual history, however, Eom was a "Hojang," a low-ranking government official in Yeongwol. While his rank was low, his decision was much more dangerous in reality; as a public servant, defying the King's order to retrieve the body was an act of high treason that carried a much heavier risk.</p>
     </div>
 
-    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #a67c52;">
-      <p style="font-size: 11px; font-weight: 700; color: #a67c52; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Warm Interaction vs. Strict Isolation</p>
+    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #e0b385;">
+      <p style="font-size: 14px; font-weight: 700; color: #e0b385; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Warm Interaction vs. Strict Isolation</p>
       <p class="intro-hook-body">The film highlights moments of Danjong building hope through his interactions with the villagers. In reality, Danjong's place of exile, "Cheongnyeongpo," was a natural prison surrounded by deep rivers on three sides. Historically, Danjong was kept in strict isolation, spending his lonely days under the constant, watchful eyes of guards.</p>
     </div>
 
-    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #a67c52;">
-      <p style="font-size: 11px; font-weight: 700; color: #a67c52; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">The Truth Behind the Death</p>
-      <p class="intro-hook-body">The film portrays a poignant final moment where Eom Heung-do is there to see the King off. While the official records of the time (The Annals of the Joseon Dynasty) claim that Danjong committed suicide, historians today are almost certain it was an assassination ordered by King Sejo. Whether it was by royal poison or strangulation, the historical truth was far more brutal than what was shown in the cinema.</p>
+    <div style="margin-bottom: 28px; padding-left: 16px; border-left: 2px solid #e0b385;">
+      <p style="font-size: 14px; font-weight: 700; color: #e0b385; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">The Truth Behind the Death</p>
+      <p class="intro-hook-body">The film creates a dramatic effect by depicting Eom Heung-do personally ending the King's life when Sejo's men arrive to force Danjong to drink poison. While the official records of the time (The Annals of the Joseon Dynasty) claim that Danjong committed suicide, historians today are almost certain it was an assassination ordered by King Sejo.</p>
     </div>
 
   </div>
 
-  <p class="intro-hook-question" style="margin-top: 48px; margin-bottom: 0; font-size: clamp(20px, 2.5vw, 28px);">
+  <p class="intro-hook-question" style="margin-top: 100px; margin-bottom: 0; font-size: clamp(28px, 2.5vw, 30px);">
     Now, let's go beyond the movie and explore the real history in more detail.
   </p>
     </div></div>
@@ -1104,20 +1108,15 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
     </div>
 
     <div class="seal-wrap" data-reveal="seal-wrap">
-      <img src="asset/crp.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
-      <p style="font-size:11px;color:#7a6050;margin-top:8px;font-style:italic;line-height:1.5;">Cheongnyeongpo, Yeongwol — the exile site of King Danjong (Photo: Yonhap News)</p>
+      <img src="asset/alone.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
+      <p style="font-size:11px;color:#7a6050;margin-top:8px;font-style:italic;line-height:1.5;">A scene from The King's Warden, depicting Danjong living in isolation within a small palace.</p>
       <div class="curtain curtain-right"></div>
     </div>
   </div>
 </section>
 
 
-<section style="min-height:auto;padding:0;display:block;background:transparent;overflow:hidden;">
-  <div style="position:relative;width:100%;max-width:860px;margin:0 auto;padding:0 60px 60px;">
-    <img src="asset/yb.png" data-reveal="yb-img" style="width:100%;display:block;object-fit:cover;max-height:480px;opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s cubic-bezier(0.16,1,0.3,1);"/>
-    <p style="font-size:11px;color:#7a6050;margin-top:8px;font-style:italic;line-height:1.5;">A scene from <em>The King's Warden</em> in which Danjong is taken by raft to his place of exile.</p>
-  </div>
-</section>
+
 
 <section id="s2-4">
   <div class="two-col">
@@ -1132,11 +1131,23 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
         <img src="asset/sys.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
         <div class="curtain curtain-right"></div>
       </div>
-      <p style="font-size:11px;color:#7a6050;margin-top:8px;font-style:italic;line-height:1.5;">Grand Prince Geumseong (Lee Joon-hyuk), who attempts to restore King Danjong to the throne, as depicted in <em>The King's Warden</em>.</p>
+      <p style="font-size:11px;color:#5f4637;margin-top:8px;font-style:italic;line-height:1.5;">Grand Prince Geumseong (Lee Joon-hyuk), who attempts to restore King Danjong to the throne, as depicted in <em>The King's Warden</em>.</p>
     </div>
   </div>
 </section>
-
+<section style="min-height:auto;padding:0;display:block;background:transparent;overflow:hidden;">
+  <div style="position:relative;width:100%;max-width:800px;margin:0 auto;padding:0 60px 60px;">
+    <img src="asset/yb.png" data-reveal="yb-img" style="width:100%;display:block;object-fit:cover;max-height:400px;opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s cubic-bezier(0.16,1,0.3,1); box-shadow: 12px 20px 60px rgba(0,0,0,0.2);"/>
+    <p style="font-size:11px;color:#675143;margin-top:8px;font-style:italic;line-height:1.5;">A scene from <em>The King's Warden</em> in which Danjong is taken by raft to his place of exile.</p>
+  </div>
+</section>
+<br><br><br><br>
+<section style="min-height:auto;padding:0;display:block;background:transparent;overflow:hidden;">
+  <div style=" position:relative;width:100%;max-width:700px;margin:0 auto;padding:0 60px 60px;">
+    <img src="asset/crp.png" data-reveal="yb-img" style="width:100%;display:block;object-fit:cover;max-height:400px;opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s cubic-bezier(0.16,1,0.3,1); box-shadow: 12px 20px 60px rgba(0,0,0,0.2);"/>
+    <p style="font-size:11px;color:#4c3c32;margin-top:8px;font-style:italic;line-height:1.5;">Cheongnyeongpo, Yeongwol — the exile site of King Danjong (Photo: Yonhap News) </p>
+  </div>
+</section>
 
 <section id="s2-5">
   <div class="two-col">
@@ -1148,7 +1159,7 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
 
     <div class="seal-wrap" data-reveal="seal-wrap">
       <img src="asset/last.png" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
-      <p style="font-size:11px;color:#c9b7a3;margin-top:8px;font-style:italic;line-height:1.5;">A scene from <em>The King's Warden</em> in which Danjong (Park Ji-hoon) takes his own life.</p>
+      <p style="font-size:11px;color:#c9b7a3;margin-top:8px;font-style:italic;line-height:1.5;">A scene from <em>The King's Warden</em> in which Danjong (Park Ji-hoon) puts the rope around his neck, which Eom Heung-do is to pull.</p>
       <div class="curtain curtain-right"></div>
     </div>
   </div>
@@ -1187,6 +1198,8 @@ Deposed and exiled to a remote village in Yeongwol, Danjong’s life was a serie
 
 Despite this terrifying threat, Eom Heung-do, a low-ranking official in Yeongwol, could not leave his King in the cold water. He took the body from the river and gave the King a proper burial at the foot of Mount Bongnae.</p>
     <p class="body" style="margin-top:24px">Knowing that King Sejo's decree still hung over his family like a death sentence, Eom Heung-do made the painful decision to scatter his household across the country. He sent his sons to distant regions — one to Yecheon, another to Ulsan — and he himself fled to Gunwi in present-day North Gyeongsang Province with his second son, where he lived out the remainder of his days in quiet hiding. He never returned to Yeongwol.</p>
+    <div style="width:400px;height:1px;background:#a67c52;margin:40px auto;opacity:0.6;"></div>
+    
     <p class="body" style="margin-top:24px">For nearly two and a half centuries, his act of courage went without official recognition. Then, in 1698, when King Sukjong finally restored Danjong's royal title, the tide of history turned. Eom Heung-do was posthumously awarded a government rank and enshrined alongside the Six Martyred Ministers at Changjeolsa Shrine in Yeongwol — the very town where his King had suffered and died.</p>
     <p class="body" style="margin-top:24px">His honor only grew with time. In the late 19th century, King Gojong bestowed upon him the posthumous title of <strong>Chunguigong (忠毅公)</strong> — <em>"Lord of Loyal Valor"</em> — and elevated him to the rank of Minister of Works. Today, Eom Heung-do is remembered not as a powerful nobleman or a celebrated general, but as an ordinary man who chose to do the right thing when no one else would — and who paid for that choice with a lifetime of exile and silence.</p>
   </div>
@@ -1235,9 +1248,9 @@ Despite this terrifying threat, Eom Heung-do, a low-ranking official in Yeongwol
     <path d="M120,300 L400,20 L680,300 L400,580 Z" fill="none" stroke="#8b5e3c" stroke-width="1"/>
     <text x="400" y="330" font-family="Cormorant Garamond,serif" font-size="130" fill="#a67c52" text-anchor="middle" opacity="0.2" font-weight="300">端</text>
   </svg>
-  <p style="font-size:11px;color:#7a5030;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;position:relative;z-index:1;">Jangneung Royal Tomb of King Danjong, Yeongwol<br/>Source: Royal Palaces and Tombs Center, Cultural Heritage Administration of Korea</p>
+  <p style="font-size:11px;color:#7a5030;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;position:relative;z-index:1;">Jangneung Royal Tomb of King Danjong, Yeongwol<br/></p>
   <div style="position:relative;width:min(560px,80vw);margin:0 auto 48px;z-index:1;opacity:0;transform:translateY(40px);transition:opacity 1s ease 0.3s,transform 1s cubic-bezier(0.16,1,0.3,1) 0.3s;" data-reveal="grave-img">
-    <img src="asset/grave.png" style="width:100%;display:block;object-fit:cover;"/>
+    <img src="asset/grave.png" style="width:100%;display:block;object-fit:cover; box-shadow: 12px 20px 60px rgba(0,0,0,0.2);"/>
     <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to bottom,transparent,#2e1e10);pointer-events:none;"></div>
   </div>
   <div style="height:48px;"></div>
@@ -1245,9 +1258,9 @@ Despite this terrifying threat, Eom Heung-do, a low-ranking official in Yeongwol
   <div class="finale-rule"  data-reveal="finale-rule"></div>
   <div class="finale-dates" data-reveal="finale-dates">1441 — 1457</div>
   <p class="finale-coda"   data-reveal="finale-coda">
-    A king whose crown was lost to greed, but whose soul remains a symbol of eternal sorrow.
+    A king whose crown was lost to greed, <br> but whose soul remains a symbol of eternal sorrow.
   </p>
-  <br/><br/>
+  <br/><br/><br/><br><br><br><br>
 
 </section>
 
