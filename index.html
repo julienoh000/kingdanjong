@@ -407,8 +407,8 @@ h2.serif {
   position: absolute; inset: 36px; border-radius: 100%;
   background: radial-gradient(ellipse at 38% 33%, var(--copper), var(--ink) 80%);
   border: 1.5px solid var(--terra);
-  transform: scale(0); opacity: 0;
-  transition: transform 1.2s cubic-bezier(0.34,1.56,0.64,1) 0.3s, opacity 0.6s ease 0.3s;
+  transform: scale(1); opacity: 1;
+  transition: none;
   display: flex; align-items: center; justify-content: center; overflow: hidden;
 }
 .iris-core.in { transform: scale(1); opacity: 1; }
@@ -954,6 +954,7 @@ box-shadow: 12px 20px 60px rgba(0,0,0,0.2);}
     object-fit: cover;
     border-radius: 50%;
   "/>
+  <div class="curtain curtain-top"></div>
 </div>
   </div>
   <div class="s1-text" data-reveal="s1-text">
@@ -1244,7 +1245,11 @@ const io = new IntersectionObserver(entries => {
       e.target.classList.add('in');
       setTimeout(() => document.getElementById('iris-outer').classList.add('in'), 0);
       setTimeout(() => document.getElementById('iris-mid').classList.add('in'),   160);
-      setTimeout(() => document.getElementById('iris-core').classList.add('in'),  320);
+      setTimeout(() => {
+        document.getElementById('iris-core').classList.add('in');
+        const c = document.getElementById('iris-core').querySelector('.curtain');
+        if (c) c.classList.add('open');
+      }, 320);
     } else if (key === 'seal-wrap') {
       e.target.classList.add('in'); openCurtain(e.target, 380);
     } else if (key === 'portrait-wrap') {
